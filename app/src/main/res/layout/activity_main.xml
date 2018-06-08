@@ -3,12 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.lukasz.moviedatabase.MainActivity"
-    android:padding="8dp">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/movieRecycler"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:minWidth="?attr/actionBarSize"
+        android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content">
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/pager">
+
+    </android.support.v4.view.ViewPager>
 
 </LinearLayout>
