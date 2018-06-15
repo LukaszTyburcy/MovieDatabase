@@ -22,7 +22,7 @@ class MoviesAdapter(context : Context) : RecyclerView.Adapter<MoviesAdapter.View
         holder.movieThumbnailIV.setImageDrawable( mContext.resources.getDrawable(R.drawable.abc_btn_check_material))
         holder.titleTV.text = "Example title"
 
-    }
+    } 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view : View = mInflater.inflate(R.layout.single_movie, parent, false)

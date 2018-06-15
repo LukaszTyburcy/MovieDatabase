@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.support.v7.app.AppCompatActivity
 import com.lukasz.moviedatabase.Adapter.PagerAdapter
+import com.lukasz.moviedatabase.WebApi.RetrofitBuilder
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(){
@@ -11,6 +12,11 @@ class MainActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+
+        val client  = RetrofitBuilder().getMyWebService()
+
 
         tabLayout.addTab(tabLayout.newTab().setText("Popular"))
         tabLayout.addTab(tabLayout.newTab().setText("Top"))

@@ -9,4 +9,8 @@ class Movie {
     var poster: String? = null
     var description: String? = null
     var backdrop: String? = null
+
+    class MovieResult {
+        val results: List<Movie>? = null
+    }
 }
